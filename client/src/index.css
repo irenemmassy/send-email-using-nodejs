@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-subMain font-main
+    
+}
+h1{
+    font-family: 'Lobster', cursive;
+}
+.trans{
+    @apply transition duration-1000 ease-out
+}
+.social{
+    @apply hover:animate-spin
+}
+
+.flex-colo{
+    @apply flex justify-center items-center flex-col
+}
+.flex-rows{
+    @apply flex justify-center items-center flex-row gap-12 text-xs
+}
+input:focus,select:focus,textarea:focus{
+    outline: 0;
+}
+.box-1{
+    width: 36%;
+}
+.box-2{
+    width:64%;
+}
+.box-shadow{
+    box-shadow: 10px 10px 40px 0px #24252614;
+    box-shadow: -10px -10px 40px 0px #24252614;
+
+}
+
+@media (max-width:640px) {
+    .main-box{
+        flex-direction:column
+    }
+    .box-1,.box-2{
+        width: 100%;
+    }
+    label{
+        font-size: .9rem;
+    }
+}
